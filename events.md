@@ -18,13 +18,8 @@ You can also use this page to describe your recurring activities, for example:
 
 ## Public Calendar
 
-<iframe src="YOUR_GOOGLE_CALENDAR_EMBED_URL"
-style="border: 0"
-width="100%"
-height="700"
-frameborder="0"
-scrolling="no">
-</iframe>
+<iframe src="https://calendar.google.com/calendar/embed?src=sdini.org%40gmail.com&ctz=America%2FLos_Angeles" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+
 
 ## Questions?
 
