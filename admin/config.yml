@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: sdini-org/sdini-org.github.io
+  repo: sdini-web/sdi-ni.github.io
   branch: main
 
 media_folder: "images/uploads"
