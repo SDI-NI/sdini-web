@@ -9,8 +9,6 @@ public_folder: "/images/uploads"
 site_url: "https://sdini.org"
 display_url: "https://sdini.org"
 
-publish_mode: editorial_workflow
-
 collections:
   - name: "pages"
     label: "Pages"
