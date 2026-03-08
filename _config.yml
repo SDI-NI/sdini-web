@@ -32,4 +32,3 @@ exclude:
   - README.md
   - node_modules
   - vendor
-2. File: admin/index.html
