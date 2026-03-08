@@ -1,39 +1,107 @@
 backend:
-  name: github
-  repo: sdini-web/sdi-ni.github.io
+  name: git-gateway
   branch: main
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
+site_url: "https://sdini.org"
+display_url: "https://sdini.org"
+
+publish_mode: editorial_workflow
+
 collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "index.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "home" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Heading", name: "hero_heading", widget: "string" }
+          - { label: "Hero Subheading", name: "hero_subheading", widget: "text" }
+          - { label: "Primary Button Text", name: "primary_button_text", widget: "string", required: false }
+          - { label: "Primary Button Link", name: "primary_button_link", widget: "string", required: false }
+          - { label: "Secondary Button Text", name: "secondary_button_text", widget: "string", required: false }
+          - { label: "Secondary Button Link", name: "secondary_button_link", widget: "string", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "About"
+        name: "about"
+        file: "about.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/about/" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Join Us"
+        name: "join"
+        file: "join.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/join/" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Education"
+        name: "education"
+        file: "education.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/education/" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Contact"
+        name: "contact"
+        file: "contact.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/contact/" }
+          - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "events"
     label: "Events"
     folder: "_events"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-
+    summary: "{{title}} — {{date}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Location", name: "location", widget: "string"}
-      - {label: "Description", name: "body", widget: "markdown"}
-
-  - name: "pages"
-    label: "Pages"
-    folder: "_pages"
-    create: true
-
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Content", name: "body", widget: "markdown"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date and Time", name: "date", widget: "datetime" }
+      - { label: "End Time", name: "end_time", widget: "string", required: false, hint: "Example: 12:00 PM" }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Address", name: "address", widget: "string", required: false }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "gallery"
-    label: "Photos"
+    label: "Gallery"
     folder: "_gallery"
     create: true
-
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}}"
     fields:
-      - {label: "Image", name: "image", widget: "image"}
-      - {label: "Caption", name: "caption", widget: "string"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Alt Text", name: "alt", widget: "string", required: false }
+      - { label: "Caption", name: "caption", widget: "text", required: false }
+
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "Organization Info"
+        name: "organization"
+        file: "_data/site.yml"
+        fields:
+          - { label: "Organization Name", name: "organization_name", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string", required: false }
+          - { label: "Email", name: "email", widget: "string", required: false }
+          - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
+          - { label: "Facebook URL", name: "facebook", widget: "string", required: false }
+          - { label: "Bluesky URL", name: "bluesky", widget: "string", required: false }
