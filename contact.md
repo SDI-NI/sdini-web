@@ -4,4 +4,4 @@ permalink: /contact/
 layout: page
 ---
 
-Email: [sdini.org@gmail.com](mailto:sdini.org@gmail.com)
+Email: [info@sdini.org](mailto:info@sdini.org)
