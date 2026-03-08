@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<section class="page-section container">
+  <p><a href="/events/">← Back to events</a></p>
+  <h1>{{ page.title }}</h1>
+  <p><strong>Date:</strong> {{ page.date | date: "%A, %B %-d, %Y at %-I:%M %p" }}</p>
+  {% if page.end_time %}
+    <p><strong>Ends:</strong> {{ page.end_time }}</p>
+  {% endif %}
+  {% if page.location %}
+    <p><strong>Location:</strong> {{ page.location }}</p>
+  {% endif %}
+  {% if page.address %}
+    <p><strong>Address:</strong> {{ page.address }}</p>
+  {% endif %}
+  <div class="event-body">
+    {{ content }}
+  </div>
+</section>
