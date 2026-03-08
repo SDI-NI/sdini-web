@@ -1,7 +1,7 @@
 ---
 title: Rally at Bernardo Center
 date: 2026-03-21 10:00:00 -0800
-end_time: 12:00 PM
+end_time: 12:30 PM
 location: Bernardo Center Drive
 address: Rancho Bernardo, San Diego, CA
 featured: true
