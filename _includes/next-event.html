@@ -1,0 +1,28 @@
+{% assign featured_events = site.events | where: "featured", true | sort: "date" %}
+{% assign next_event = featured_events.first %}
+
+{% if next_event == nil %}
+  {% assign sorted_events = site.events | sort: "date" %}
+  {% for event in sorted_events %}
+    {% assign now_ts = "now" | date: "%s" %}
+    {% assign event_ts = event.date | date: "%s" %}
+    {% if event_ts >= now_ts %}
+      {% assign next_event = event %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if next_event %}
+<section class="section container">
+  <div class="event-card">
+    <h2>Next Event</h2>
+    <h3><a href="{{ next_event.url }}">{{ next_event.title }}</a></h3>
+    <p>{{ next_event.date | date: "%A, %B %-d, %Y at %-I:%M %p" }}</p>
+    {% if next_event.location %}
+      <p>{{ next_event.location }}</p>
+    {% endif %}
+    <p><a class="button" href="/events/">View All Events</a></p>
+  </div>
+</section>
+{% endif %}
