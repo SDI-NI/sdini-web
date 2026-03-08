@@ -1,19 +1,35 @@
 title: Save Democracy Indivisible North Inland
-description: Community action for democracy, freedom, and the rule of law
-theme: minima
+email: sdini.org@gmail.com
+description: >-
+  Peaceful civic action for democracy, rule of law, civil rights, and freedom.
+baseurl: ""
+url: "https://sdini.org"
+
 markdown: kramdown
-plugins:
-  - jekyll-feed
+theme: null
 
-header_pages:
-  - about.md
-  - events.md
-  - join.md
-  - gallery.md
-  - resources.md
+collections:
+  events:
+    output: true
+    permalink: /events/:title/
+  gallery:
+    output: false
 
-minima:
-  social_links:
-    - title: Gmail
-      icon: email
-      url: "mailto:sdini.org@gmail.com"
+defaults:
+  - scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "event"
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+
+plugins: []
+
+exclude:
+  - README.md
+  - node_modules
+  - vendor
+2. File: admin/index.html
