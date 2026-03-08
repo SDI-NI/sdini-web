@@ -115,3 +115,7 @@ a {
   padding: 2rem 0;
   margin-top: 3rem;
 }
+
+.center-text-container {
+    text-align: center;
+}
