@@ -1,0 +1,14 @@
+<section class="hero">
+  <div class="container hero-inner">
+    <h1>{{ page.hero_heading }}</h1>
+    <p>{{ page.hero_subheading }}</p>
+    <div class="hero-actions">
+      {% if page.primary_button_text and page.primary_button_link %}
+        <a class="button" href="{{ page.primary_button_link }}">{{ page.primary_button_text }}</a>
+      {% endif %}
+      {% if page.secondary_button_text and page.secondary_button_link %}
+        <a class="button button-secondary" href="{{ page.secondary_button_link }}">{{ page.secondary_button_text }}</a>
+      {% endif %}
+    </div>
+  </div>
+</section>
