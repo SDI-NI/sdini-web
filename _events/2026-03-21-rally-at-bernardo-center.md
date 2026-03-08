@@ -1,5 +1,5 @@
 ---
-title: Rally at Bernardo Center
+title: Rally at Bernardo Center Drive
 date: 2026-03-21T04:00:00.000-07:00
 end_time: 12:30 PM
 location: Bernardo Center Drive
