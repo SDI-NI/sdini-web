@@ -1,7 +1,9 @@
 <footer class="site-footer">
   <div class="container">
-    <p>{{ site.title }}</p>
-    <p>{{ site.description }}</p>
-    <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    <p>{{ site.data.site.organization_name | default: site.title }}</p>
+
+    {% if site.data.site.tagline %}
+      <p>{{ site.data.site.tagline }}</p>
+    {% endif %}
   </div>
 </footer>
