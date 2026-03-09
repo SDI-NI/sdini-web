@@ -13,11 +13,22 @@ Helpful guidance for respectful, lawful, and effective public engagement.
 
 Topics you may want to include here:
 
-* **Participant Safety Training for No Kings 3** [Safety Training ](https://www.mobilize.us/indivisible/event/913879/)
+* #### **Participant Safety Training for No Kings 3** [Safety Training ](https://www.mobilize.us/indivisible/event/913879/)
+
+* Understand your local laws about protests, curfews, and police interaction.
+
+* The ACLU offers guides for the U.S. on protester rights:
+
+
+  <https://www.aclu.org/know-your-rights/protesters-rights/>
+
+
+
+#### Learn how to exercise your Constitutional right to record ICE and other federal agents: [https://www.youtube.com/live/zqka9fUTwdA ](https://www.youtube.com/live/zqka9fUTwdA)
+
 * **De-escalation** [Training](https://www.mobilize.us/indivisible/event/790452/) 
-* accessibility and safety planning
-* communicating with the public
-* supporting newcomers
+* #### [Election Observers Rights and Responsibilities](https://www.sos.ca.gov/administration/regulations/current-regulations/elections/election-observations-rights-and-responsibilities)
+* #### [Tips for Preparedness, Peaceful Protesting, and Safety](https://www.hrc.org/resources/tips-for-preparedness-peaceful-protesting-and-safety)
 
 ## Democracy and Civic Education
 
