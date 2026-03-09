@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<section class="page-section container">
+  <h1>Contact</h1>
+
+  {% if site.data.site.tagline %}
+    <p>{{ site.data.site.tagline }}</p>
+  {% endif %}
+
+  {% if site.data.site.email %}
+    <h2>Email</h2>
+    <p>
+      <a href="mailto:{{ site.data.site.email }}">
+        {{ site.data.site.email }}
+      </a>
+    </p>
+  {% endif %}
+
+  {% assign has_social = false %}
+  {% if site.data.site.facebook %}{% assign has_social = true %}{% endif %}
+  {% if site.data.site.instagram %}{% assign has_social = true %}{% endif %}
+  {% if site.data.site.bluesky %}{% assign has_social = true %}{% endif %}
+
+  {% if has_social %}
+    <h2>Social Media</h2>
+    <div class="contact-links">
+      {% if site.data.site.facebook %}
+        <p><a href="{{ site.data.site.facebook }}" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+      {% endif %}
+
+      {% if site.data.site.instagram %}
+        <p><a href="{{ site.data.site.instagram }}" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+      {% endif %}
+
+      {% if site.data.site.bluesky %}
+        <p><a href="{{ site.data.site.bluesky }}" target="_blank" rel="noopener noreferrer">Bluesky</a></p>
+      {% endif %}
+    </div>
+  {% endif %}
+</section>
