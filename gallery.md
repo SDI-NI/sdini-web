@@ -4,6 +4,8 @@ permalink: /gallery/
 layout: page
 ---
 
+Photos from rallies, vigils, meetings, and community events.
+
 <div class="gallery-grid">
   {% assign photos = site.gallery | sort: "date" | reverse %}
   {% for item in photos %}

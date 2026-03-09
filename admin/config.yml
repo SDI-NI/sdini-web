@@ -2,12 +2,13 @@ backend:
   name: git-gateway
   branch: main
 
-publish_mode: editorial_workflow
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 site_url: "https://sdini.org"
 display_url: "https://sdini.org"
+
+publish_mode: editorial_workflow
 
 collections:
   - name: "pages"
@@ -35,6 +36,15 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Permalink", name: "permalink", widget: "hidden", default: "/about/" }
           - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Gallery Page"
+        name: "gallery_page"
+        file: "gallery.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/gallery/" }
+          - { label: "Body Intro", name: "body", widget: "markdown", required: false }
 
       - label: "Join Us"
         name: "join"
@@ -82,6 +92,7 @@ collections:
     label: "Gallery"
     folder: "_gallery"
     create: true
+    delete: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     summary: "{{title}}"
     fields:
