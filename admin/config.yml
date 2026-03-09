@@ -99,7 +99,7 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "gallery"
-    label: "Gallery"
+    label: "Photo Uploads"
     folder: "_gallery"
     create: true
     delete: true
@@ -108,11 +108,9 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Alt Text", name: "alt", widget: "string", required: false }
-      - { label: "Caption", name: "caption", widget: "text", required: false }
+      - { label: "Short Title for Photo", name: "title", widget: "string" }
+      - { label: "Upload Photo File", name: "image", widget: "image" }
+      - { label: "Caption (optional)", name: "caption", widget: "text", required: false }
 
   - name: "settings"
     label: "Site Settings"
