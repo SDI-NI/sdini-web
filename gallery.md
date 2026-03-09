@@ -11,12 +11,12 @@ Photos from rallies, vigils, meetings, and community events.
   {% for item in photos %}
     <figure class="gallery-item">
       <img src="{{ item.image | relative_url }}" alt="{{ item.alt | default: item.title }}">
-      {% if item.caption or item.title %}
         <figcaption>
           <strong>{{ item.title }}</strong>
-          {% if item.caption %}<div>{{ item.caption }}</div>{% endif %}
+          {% if item.caption %}
+            <div>{{ item.caption }}</div>
+          {% endif %}
         </figcaption>
-      {% endif %}
     </figure>
   {% endfor %}
 </div>
