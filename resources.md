@@ -11,8 +11,6 @@ This page can grow over time into a library of practical and educational informa
 
 Helpful guidance for respectful, lawful, and effective public engagement.
 
-Topics you may want to include here:
-
 * #### **Participant Safety Training for No Kings 3** [Safety Training ](https://www.mobilize.us/indivisible/event/913879/)
 
 * Understand your local laws about protests, curfews, and police interaction.
