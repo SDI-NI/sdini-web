@@ -14,7 +14,7 @@ Helpful guidance for respectful, lawful, and effective public engagement.
 Topics you may want to include here:
 
 * **Participant Safety Training for No Kings 3** [Safety Training ](https://www.mobilize.us/indivisible/event/913879/)
-* **De-escalation [Training](https://www.mobilize.us/indivisible/event/790452/)** 
+* **De-escalation** [Training](https://www.mobilize.us/indivisible/event/790452/) 
 * accessibility and safety planning
 * communicating with the public
 * supporting newcomers
