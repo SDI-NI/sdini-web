@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<section class="page-section container">
+
+  <h1>{{ site.data.site.organization_name | default: site.title }}</h1>
+
+  {% if site.data.site.tagline %}
+  <p>{{ site.data.site.tagline }}</p>
+  {% endif %}
+
+  <h2>Email</h2>
+
+  {% if site.data.site.email %}
+  <p>
+    <a href="mailto:{{ site.data.site.email }}">
+      {{ site.data.site.email }}
+    </a>
+  </p>
+  {% endif %}
+
+  <h2>Social Media</h2>
+
+  <div class="contact-links">
+
+    {% if site.data.site.facebook %}
+    <p>
+      <a href="{{ site.data.site.facebook }}" target="_blank">
+        Facebook
+      </a>
+    </p>
+    {% endif %}
+
+    {% if site.data.site.instagram %}
+    <p>
+      <a href="{{ site.data.site.instagram }}" target="_blank">
+        Instagram
+      </a>
+    </p>
+    {% endif %}
+
+    {% if site.data.site.bluesky %}
+    <p>
+      <a href="{{ site.data.site.bluesky }}" target="_blank">
+        Bluesky
+      </a>
+    </p>
+    {% endif %}
+
+  </div>
+
+</section>
