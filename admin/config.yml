@@ -121,8 +121,9 @@ collections:
         file: "_data/site.yml"
         fields:
           - { label: "Organization Name", name: "organization_name", widget: "string" }
+          - { label: "Short Name", name: "short_name", widget: "string", required: false }
           - { label: "Tagline", name: "tagline", widget: "string", required: false }
-          - { label: "Email", name: "email", widget: "string", required: false }
-          - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
+          - { label: "Main Email", name: "email", widget: "string", required: false }
           - { label: "Facebook URL", name: "facebook", widget: "string", required: false }
+          - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
           - { label: "Bluesky URL", name: "bluesky", widget: "string", required: false }
