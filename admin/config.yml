@@ -36,15 +36,15 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Permalink", name: "permalink", widget: "hidden", default: "/about/" }
           - { label: "Body", name: "body", widget: "markdown" }
-
-      - label: "Gallery Page"
-        name: "gallery_page"
-        file: "gallery.md"
-        fields:
-          - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/gallery/" }
-          - { label: "Body Intro", name: "body", widget: "markdown", required: false }
+          
+     - label: "Gallery Page"
+       name: "gallery_page"
+       file: "gallery.md"
+       fields:
+         - { label: "Layout", name: "layout", widget: "hidden", default: "gallery" }
+         - { label: "Title", name: "title", widget: "string" }
+         - { label: "Permalink", name: "permalink", widget: "hidden", default: "/gallery/" }
+         - { label: "Intro Text", name: "intro", widget: "text", required: false }
 
       - label: "Resources"
         name: "resources"
