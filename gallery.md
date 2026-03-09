@@ -1,17 +1,20 @@
 ---
-layout: page
 title: Gallery
 permalink: /gallery/
+layout: page
 ---
 
-# Gallery
-
-Photos from rallies, vigils, meetings, and community events.
-
-## Recent Photos
-
-![Community members at a rally](/_gallery/2026-03-07-rb-rally-7-mar-2026.jpg)
-
-## Share Photos
-
-To contribute photos for possible posting, email [info@sdini.org](mailto:info@sdini.org).
+<div class="gallery-grid">
+  {% assign photos = site.gallery | sort: "date" | reverse %}
+  {% for item in photos %}
+    <figure class="gallery-item">
+      <img src="{{ item.image | relative_url }}" alt="{{ item.alt | default: item.title }}">
+      {% if item.caption or item.title %}
+        <figcaption>
+          <strong>{{ item.title }}</strong>
+          {% if item.caption %}<div>{{ item.caption }}</div>{% endif %}
+        </figcaption>
+      {% endif %}
+    </figure>
+  {% endfor %}
+</div>
