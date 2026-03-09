@@ -158,6 +158,20 @@ a {
   font-size: 0.95rem;
 }
 
+.contact-links {
+  margin-top: 1rem;
+}
+
+.contact-links a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #0d2340;
+}
+
+.contact-links p {
+  margin: 0.5rem 0;
+}
+
 .site-footer {
   background: #0d2340;
   color: #ffffff;
