@@ -20,18 +20,32 @@ a {
 }
 
 .construction-banner {
-  background: #f4c542;
-  color: #1b1b1b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
   text-align: center;
   font-weight: 700;
   padding: 0.6rem 1rem;
   font-size: 0.95rem;
+  background: #f4c542;
+  color: #1b1b1b;
+  border-radius: 0.35rem;
+  margin: 0.75rem 0 0.75rem 0;
+}
+
+.construction-icon {
+  flex: 0 0 auto;
+}
+
+.construction-text {
+  display: inline-block;
 }
 
 .site-header {
   background: #0d2340;
   color: #ffffff;
-  padding: 1rem 0;
+  padding: 0.5rem 0 1rem 0;
 }
 
 .header-inner {
@@ -41,7 +55,6 @@ a {
   align-items: center;
   flex-wrap: wrap;
 }
-
 .site-title {
   text-decoration: none;
   font-weight: 700;
