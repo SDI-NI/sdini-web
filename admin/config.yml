@@ -27,7 +27,7 @@ collections:
           - { label: "Secondary Button Text", name: "secondary_button_text", widget: "string", required: false }
           - { label: "Secondary Button Link", name: "secondary_button_link", widget: "string", required: false }
           - { label: "Body", name: "body", widget: "markdown" }
-          
+
       - label: "About"
         name: "about"
         file: "about.md"
@@ -36,15 +36,15 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Permalink", name: "permalink", widget: "hidden", default: "/about/" }
           - { label: "Body", name: "body", widget: "markdown" }
-          
-     - label: "Gallery Page"
-       name: "gallery_page"
-       file: "gallery.md"
-       fields:
-         - { label: "Layout", name: "layout", widget: "hidden", default: "gallery" }
-         - { label: "Title", name: "title", widget: "string" }
-         - { label: "Permalink", name: "permalink", widget: "hidden", default: "/gallery/" }
-         - { label: "Intro Text", name: "intro", widget: "text", required: false }
+
+      - label: "Gallery Page"
+        name: "gallery_page"
+        file: "gallery.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "gallery" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/gallery/" }
+          - { label: "Intro Text", name: "intro", widget: "text", required: false }
 
       - label: "Resources"
         name: "resources"
@@ -92,7 +92,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date and Time", name: "date", widget: "datetime" }
-      - { label: "End Time", name: "end_time", widget: "string", required: false, hint: "Example: 12:00 PM" }
+      - { label: "End Time", name: "end_time", widget: "string", required: false }
       - { label: "Location", name: "location", widget: "string" }
       - { label: "Address", name: "address", widget: "string", required: false }
       - { label: "Featured", name: "featured", widget: "boolean", default: false }
@@ -108,9 +108,11 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "Short Title for Photo", name: "title", widget: "string" }
-      - { label: "Upload Photo File", name: "image", widget: "image" }
-      - { label: "Caption (optional)", name: "caption", widget: "text", required: false }
+      - { label: "Photo Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Upload Photo", name: "image", widget: "image", allow_multiple: false }
+      - { label: "Alt Text", name: "alt", widget: "string", required: false }
+      - { label: "Caption", name: "caption", widget: "text", required: false }
 
   - name: "settings"
     label: "Site Settings"
