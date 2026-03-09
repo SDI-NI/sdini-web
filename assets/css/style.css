@@ -164,3 +164,17 @@ a {
   padding: 2rem 0;
   margin-top: 3rem;
 }
+
+.contact-social {
+  margin-top: 1rem;
+}
+
+.contact-social a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #0d2340;
+}
+
+.contact-social p {
+  margin: 0.5rem 0;
+}
