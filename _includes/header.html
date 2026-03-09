@@ -9,7 +9,10 @@
   </div>
 
   <div class="container header-inner">
-    <a class="site-title" href="/">{{ site.title }}</a>
+    <a class="site-title" href="/">
+      {{ site.data.site.short_name | default: site.data.site.organization_name | default: site.title }}
+    </a>
+
     <nav class="site-nav">
       <a href="/about/">About</a>
       <a href="/events/">Events</a>
