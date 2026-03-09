@@ -4,6 +4,7 @@ permalink: /join/
 layout: page
 ---
 
-To join our mailing list, email us at [info@sdini.org](mailto:info@sdini.org).
+To get involved or ask to be added to our mailing list, contact us at
+<a href="mailto:{{ site.data.site.email }}">{{ site.data.site.email }}</a>.
 
 You can also attend one of our upcoming rallies or monthly meetings.
