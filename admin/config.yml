@@ -72,15 +72,14 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Permalink", name: "permalink", widget: "hidden", default: "/education/" }
           - { label: "Body", name: "body", widget: "markdown" }
-
-      - label: "Contact"
+          
+      - label: "Contact Page"
         name: "contact"
         file: "contact.md"
         fields:
-          - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "contact" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Permalink", name: "permalink", widget: "hidden", default: "/contact/" }
-          - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "events"
     label: "Events"
