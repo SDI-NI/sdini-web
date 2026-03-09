@@ -165,6 +165,17 @@ a {
   margin-top: 3rem;
 }
 
+.contact-links {
+  margin-top: 1rem;
+}
+
+.contact-links a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #0d2340;
+}
+
+.contact-links p {
 .contact-social {
   margin-top: 1rem;
 }
