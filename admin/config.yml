@@ -27,7 +27,7 @@ collections:
           - { label: "Secondary Button Text", name: "secondary_button_text", widget: "string", required: false }
           - { label: "Secondary Button Link", name: "secondary_button_link", widget: "string", required: false }
           - { label: "Body", name: "body", widget: "markdown" }
-
+          
       - label: "About"
         name: "about"
         file: "about.md"
