@@ -1,5 +1,4 @@
 title: Save Democracy Indivisible North Inland
-email: info@sdini.org
 description: >-
   Peaceful civic action for democracy, rule of law, civil rights, and freedom.
 baseurl: ""
@@ -23,8 +22,8 @@ defaults:
       layout: "event"
   - scope:
       path: ""
-    values:
-      layout: "page"
+      values:
+        layout: "page"
 
 plugins: []
 
