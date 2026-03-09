@@ -46,6 +46,15 @@ collections:
           - { label: "Permalink", name: "permalink", widget: "hidden", default: "/gallery/" }
           - { label: "Body Intro", name: "body", widget: "markdown", required: false }
 
+      - label: "Resources"
+        name: "resources"
+        file: "resources.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/resources/" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
       - label: "Join Us"
         name: "join"
         file: "join.md"
@@ -77,6 +86,7 @@ collections:
     label: "Events"
     folder: "_events"
     create: true
+    delete: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     summary: "{{title}} — {{date}}"
     fields:
@@ -95,6 +105,8 @@ collections:
     delete: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     summary: "{{title}}"
+    editor:
+      preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
