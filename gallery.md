@@ -1,21 +1,22 @@
 ---
-layout: page
 title: Gallery
 permalink: /gallery/
+layout: page
 ---
-
-# Gallery
 
 Photos from rallies, vigils, meetings, and community events.
 
-## Recent Photos
-
-![Community members at a rally](/assets/images/rally1.jpg)
-
-![Participants holding signs](/assets/images/rally2.jpg)
-
-![Group gathering](/assets/images/rally3.jpg)
-
-## Share Photos
-
-To contribute photos for possible posting, email [sdini.org@gmail.com](mailto:sdini.org@gmail.com).
+<div class="gallery-grid">
+  {% assign photos = site.gallery | sort: "date" | reverse %}
+  {% for item in photos %}
+    <figure class="gallery-item">
+      <img src="{{ item.image | relative_url }}" alt="{{ item.alt | default: item.title }}">
+      <figcaption>
+        <strong>{{ item.title }}</strong>
+        {% if item.caption %}
+          <div>{{ item.caption }}</div>
+        {% endif %}
+      </figcaption>
+    </figure>
+  {% endfor %}
+</div>
