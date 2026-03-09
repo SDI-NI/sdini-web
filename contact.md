@@ -1,7 +1,5 @@
 ---
 title: Contact
 permalink: /contact/
-layout: page
+layout: contact
 ---
-
-Email: [info@sdini.org](mailto:info@sdini.org)
